@@ -29,7 +29,7 @@ nav {
 }
 
 .font-selection {
-  width: 16rem;
+  width: 14rem;
   height: 3rem;
   font-size: 1.8rem;
   color: #2d2d2d;
@@ -112,7 +112,7 @@ form > label {
 }
 
 form > input {
-  width: 100%;
+  width: 95%;
   height: 6.4rem;
   border-radius: 1rem;
   border: none;
@@ -134,5 +134,5 @@ input:focus {
 .search-icon {
   position: absolute;
   top: 60%;
-  right: 5%;
+  right: 8%;
 }

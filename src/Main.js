@@ -4,6 +4,7 @@ import playbutton from "./assets/images/icon-play.svg";
 const Main = ({ search }) => {
   const [word, setWord] = useState("keyboard");
   const [phonetics, setPhonetics] = useState("/ˈkiːbɔːd/");
+  const [nounDefinitions, setNounDefinitions] = useState("");
 
   useEffect(() => {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${search}`)
@@ -11,6 +12,7 @@ const Main = ({ search }) => {
       .then((data) => {
         setWord(data[0].word);
         setPhonetics(data[0].phonetic);
+        setNounDefinitions(data[0].phonetics[0].text);
       });
   }, [search]);
 
@@ -22,6 +24,11 @@ const Main = ({ search }) => {
           <p>{phonetics}</p>
         </div>
         <img src={playbutton}></img>
+      </div>
+      <div className="noun">
+        <h2>Noun</h2>
+        <p>Meaning</p>
+        <p>{nounDefinitions}</p>
       </div>
     </main>
   );

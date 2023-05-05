@@ -152,6 +152,7 @@ main {
 }
 .meaning > p {
   font-size: 2.4rem;
+  letter-spacing: 0.5rem;
   color: #a445ed;
 }
 

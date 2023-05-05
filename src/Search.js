@@ -1,6 +1,13 @@
 import searchicon from "./assets/images/icon-search.svg";
+import { useState } from "react";
 
-const Search = () => {
+const Search = ({
+  search,
+  setSearch,
+  handleInput,
+  handleSearch,
+  handleKeyDown,
+}) => {
   return (
     <form className="search">
       <label htmlFor="search">Search anything</label>
@@ -8,8 +15,16 @@ const Search = () => {
         type="text"
         name="example"
         placeholder="Search for any word..."
+        onChange={handleInput}
+        onKeyDown={handleKeyDown}
       ></input>
-      <img className="search-icon" src={searchicon}></img>
+      <img
+        style={{ cursor: "pointer" }}
+        onClick={handleSearch}
+        className="search-icon"
+        src={searchicon}
+        alt="search"
+      ></img>
     </form>
   );
 };

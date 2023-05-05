@@ -112,7 +112,7 @@ form > label {
 }
 
 form > input {
-  width: 95%;
+  width: 100%;
   height: 6.4rem;
   border-radius: 1rem;
   border: none;
@@ -134,5 +134,32 @@ input:focus {
 .search-icon {
   position: absolute;
   top: 60%;
-  right: 8%;
+  right: 5%;
+}
+
+/* MAIN CSS
+ */
+
+main {
+  border: 1px solid red;
+  padding-top: 2rem;
+}
+
+.meaning > h1 {
+  font-size: 6.4rem;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.meaning > p {
+  font-size: 2.4rem;
+  color: #a445ed;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading > img {
+  cursor: pointer;
 }

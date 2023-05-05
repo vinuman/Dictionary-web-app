@@ -141,7 +141,6 @@ input:focus {
  */
 
 main {
-  border: 1px solid red;
   padding-top: 2rem;
 }
 
@@ -163,4 +162,50 @@ main {
 
 .heading > img {
   cursor: pointer;
+}
+
+main > .noun {
+  padding-top: 2rem;
+}
+
+.noun > h2 {
+  width: 8%;
+  font-size: 2.4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #979797;
+}
+
+.noun > p {
+  color: #757575;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.noun > ul {
+  margin-bottom: 2rem;
+}
+
+.noun > ul > li {
+  list-style-type: none;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  color: #2d2d2d;
+  opacity: 0.8;
+}
+
+.noun > ul > li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 10px;
+  background-color: #a445ed;
+  border-radius: 50%;
+}
+
+.syn {
+  padding-left: 2rem;
+  color: #a445ed;
+  font-weight: bold;
 }

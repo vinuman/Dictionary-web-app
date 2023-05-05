@@ -5,6 +5,7 @@ const Main = ({ search }) => {
   const [word, setWord] = useState("keyboard");
   const [phonetics, setPhonetics] = useState("/ˈkiːbɔːd/");
   const [nounDefinitions, setNounDefinitions] = useState([]);
+  const [synonyms, setSynonyms] = useState([]);
 
   useEffect(() => {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${search}`)
@@ -16,8 +17,11 @@ const Main = ({ search }) => {
           .filter((meaning) => meaning.partOfSpeech === "noun")
           .flatMap((noun) => noun.definitions);
         setNounDefinitions(nounDefs);
+        const syn = data[0].meanings
+          .filter((meaning) => meaning.partOfSpeech === "noun")
+          .flatMap((noun) => noun.synonyms);
+        setSynonyms(syn);
       });
-    console.log(nounDefinitions);
   }, [search]);
 
   return (
@@ -37,6 +41,10 @@ const Main = ({ search }) => {
             <li key={index}>{definition.definition}</li>
           ))}
         </ul>
+        <p>
+          Synonyms
+          <span className="syn"> {synonyms[0]}</span>
+        </p>
       </div>
     </main>
   );

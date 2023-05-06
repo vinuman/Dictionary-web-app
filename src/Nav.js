@@ -33,6 +33,8 @@ const Nav = () => {
       document.querySelector(
         '.search input[type="text"]'
       ).style.backgroundColor = "";
+      document.querySelector('.search input[type="text"]').style.color = "";
+
       document.querySelector(".title").style.color = "";
       document.querySelectorAll("ul li").forEach((item) => {
         item.style.color = "";
@@ -49,6 +51,7 @@ const Nav = () => {
       document.querySelector(
         '.search input[type="text"]'
       ).style.backgroundColor = "#1F1F1F";
+      document.querySelector('.search input[type="text"]').style.color = "#fff";
       document.querySelector(".title").style.color = "#fff";
       document.querySelectorAll("ul li").forEach((item) => {
         item.style.color = "#fff";

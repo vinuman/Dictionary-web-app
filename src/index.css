@@ -106,7 +106,7 @@ input[type="checkbox"]:checked + .slider {
 }
 
 input[type="checkbox"]:checked + .slider:before {
-  transform: translateX(2rem);
+  transform: translateX(1.8rem);
 }
 
 .moon {
@@ -132,6 +132,10 @@ input[type="checkbox"]:checked + .slider:before {
   box-shadow: rgba(164, 69, 237, 0.35) 0px 5px 15px;
 }
 
+.fonts > p {
+  font-weight: bolder;
+}
+
 .fonts > p:hover {
   color: #a445ed !important;
 }
@@ -144,8 +148,7 @@ form {
 }
 
 form > label {
-  position: absolute;
-  left: 999999px;
+  display: none;
 }
 
 form > input {
@@ -211,6 +214,7 @@ main > .noun {
   font-style: italic;
   margin-bottom: 2rem;
   border-bottom: 1px solid #979797;
+  opacity: 0.7;
 }
 
 .noun > p {
@@ -272,12 +276,11 @@ main > .noun {
   body {
     padding: 0;
     max-width: 100%;
-    overflow-x: hidden;
   }
 
   nav {
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
     height: auto;
   }
 
@@ -303,23 +306,68 @@ main > .noun {
   }
 
   .fonts {
-    width: 18.3rem;
-    height: 15.2rem;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    border-radius: 1rem;
-    z-index: 99999;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    display: none;
-    box-shadow: rgba(164, 69, 237, 0.35) 0px 5px 15px;
+    top: 80%;
+    right: 10%;
   }
 
-  .fonts > p:hover {
-    color: #a445ed !important;
+  form {
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
+
+  form > input {
+    margin-left: 2rem;
+    width: 90%;
+    height: 4.8rem;
+    font-size: 1.6rem;
+  }
+
+  input::placeholder {
+    font-size: 1.6rem;
+  }
+
+  .search-icon {
+    top: 55%;
+    right: 15%;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .meaning > h1 {
+    font-size: 3.2rem;
+  }
+  .meaning > p {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 2rem;
+  }
+
+  .heading > img {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  main > .noun {
+    margin-top: 3rem;
+  }
+
+  .noun > h2 {
+    font-size: 1.8rem;
+  }
+
+  .noun > p {
+    font-size: 1.6rem;
+  }
+
+  .noun > ul > li {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    width: 90%;
   }
 }

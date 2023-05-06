@@ -55,7 +55,11 @@ const Main = ({ search }) => {
       {notFound ? (
         <div className="not-found">
           <img
-            style={{ width: "6.4rem", height: "6.4rem" }}
+            style={{
+              width: "6.4rem",
+              height: "6.4rem",
+              borderRadius: "50%",
+            }}
             src={emoji}
             alt="sademoji"
           ></img>

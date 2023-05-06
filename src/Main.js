@@ -70,7 +70,7 @@ const Main = ({ search }) => {
         <div>
           <div className="heading">
             <div className="meaning">
-              <h1>{word}</h1>
+              <h1 className="title">{word}</h1>
               <p>{phonetics}</p>
             </div>
             <img onClick={playAudio} src={playbutton}></img>

@@ -102,7 +102,7 @@ nav {
 }
 
 input[type="checkbox"]:checked + .slider {
-  background-color: #2196f3;
+  background-color: #a445ed;
 }
 
 input[type="checkbox"]:checked + .slider:before {
@@ -129,10 +129,11 @@ input[type="checkbox"]:checked + .slider:before {
   justify-content: space-evenly;
   align-items: center;
   display: none;
+  box-shadow: rgba(164, 69, 237, 0.35) 0px 5px 15px;
 }
 
 .fonts > p:hover {
-  color: #a445ed;
+  color: #a445ed !important;
 }
 
 /* SEARCH CSS */
@@ -265,4 +266,60 @@ main > .noun {
 
 .show {
   display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .nav-end {
+    width: 60%;
+  }
+
+  .font-selection {
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .font-selected {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    margin-right: 20%;
+  }
+
+  .font-selected > p {
+    font-size: 1.4rem;
+  }
+
+  .fonts {
+    width: 18.3rem;
+    height: 15.2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    box-shadow: rgba(164, 69, 237, 0.35) 0px 5px 15px;
+  }
+
+  .fonts > p:hover {
+    color: #a445ed !important;
+  }
 }

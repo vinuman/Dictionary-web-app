@@ -64,7 +64,7 @@ const Nav = () => {
     <nav>
       <img src={logo}></img>
       <div className="nav-end">
-        <div onClick={handleFontSelection} className="font-selection">
+        <div onClick={() => handleFontSelection} className="font-selection">
           <div className="font-selected">
             <p>{font}</p>
             <img src={arrowdown}></img>

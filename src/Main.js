@@ -18,7 +18,11 @@ const Main = ({ search }) => {
         setWord(data[0].word);
         setPhonetics(data[0].phonetic);
         const nounDefs = data[0].meanings
-          .filter((meaning) => meaning.partOfSpeech === "noun")
+          .filter(
+            (meaning) =>
+              meaning.partOfSpeech === "noun" ||
+              meaning.partOfSpeech === "adverb"
+          )
           .flatMap((noun) => noun.definitions);
         setNounDefinitions(nounDefs);
         const syn = data[0].meanings

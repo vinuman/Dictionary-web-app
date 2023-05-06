@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import Search from "./Search";
 import Main from "./Main";
+
 import { useState } from "react";
 
 function App() {
@@ -13,7 +14,6 @@ function App() {
 
   const handleSearch = (event) => {
     setSearch(inputValue);
-    console.log(search);
   };
 
   const handleKeyDown = (e) => {

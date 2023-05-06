@@ -209,3 +209,20 @@ main > .noun {
   color: #a445ed;
   font-weight: bold;
 }
+
+.not-found {
+  text-align: center;
+}
+
+.not-found > h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.not-found > p {
+  font-size: 1.8rem;
+  color: #838383;
+  width: 80%;
+  margin: 0 auto;
+}
